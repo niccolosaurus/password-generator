@@ -1,0 +1,1 @@
+First a variable for the contents of the passwords are established. They need to contain lowercase and uppercase letters as well as numbers and symbols to be secure. I combines the upper and lower case letters into one variable for simplicitys sake, and then I gave symbols and numbers their own variables as well.
