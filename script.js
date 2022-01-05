@@ -58,7 +58,7 @@ function generatePassword() {
 
   return password;
 
-  // document.getElementById("generate").value = password;
+  
 };
 
 // Write password to the #password input
