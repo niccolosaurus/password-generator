@@ -48,9 +48,7 @@ function generatePassword() {
   }
 
   var flattenedPool = passwordPool.flat()
-  console.log(passwordPool);
-  console.log(flattenedPool);
-
+  
   var password = "";
 
   for (let i = 0; i < length; i++) {
