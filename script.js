@@ -11,54 +11,56 @@ function generatePassword() {
   var length = prompt('How many characters do you want your password to be, between 8 and 128 characters?');
   console.log(length)
 
-  if (length < 8) {
-    alert('More Characters Needed, please choose between 8 and 128')
-  } else if (length > 128) {
-    alert('Less Characters Needed, please choose between 8 and 128')
+  if (length < 8 || length > 128) {
+    alert('Please choose between 8 and 128')
+    return "Please click generate password to start over."
+  } else {
+    // confirm what they want in their password
+    var confirmUppercase = confirm("Would you like to include Uppercase Letters?");
+    console.log(confirmUppercase)
+
+    var confirmLowercase = confirm("Would you like to include LowercaseLetters?");
+    console.log(confirmLowercase)
+
+    var confirmNumbers = confirm("Would you like to include Numbers?");
+    console.log(confirmNumbers)
+
+    var confirmSymbols = confirm("Would you like to include Symbols?");
+    console.log(confirmSymbols)
+
+    var passwordPool = []
+    if (confirmUppercase) {
+      passwordPool.push(uppercase.split(''))
+    }
+
+    if (confirmLowercase) {
+      passwordPool.push(lowercase.split(''))
+    }
+
+    if (confirmNumbers) {
+      passwordPool.push(numbers.split(''))
+    }
+
+    if (confirmSymbols) {
+      passwordPool.push(symbols.split(''))
+    }
+
+    var flattenedPool = passwordPool.flat()
+
+    var password = "";
+
+    for (let i = 0; i < length; i++) {
+      var random = Math.floor(Math.random() * flattenedPool.length);
+      password += flattenedPool[random];
+    }
+
   }
 
-  // confirm what they want in their password
-  var confirmUppercase = confirm("Would you like to include Uppercase Letters?");
-  console.log(confirmUppercase)
 
-  var confirmLowercase = confirm("Would you like to include LowercaseLetters?");
-  console.log(confirmLowercase)
-
-  var confirmNumbers = confirm("Would you like to include Numbers?");
-  console.log(confirmNumbers)
-
-  var confirmSymbols = confirm("Would you like to include Symbols?");
-  console.log(confirmSymbols)
-
-  var passwordPool = []
-  if (confirmUppercase) {
-    passwordPool.push(uppercase.split(''))
-  }
-
-  if (confirmLowercase) {
-    passwordPool.push(lowercase.split(''))
-  }
-
-  if (confirmNumbers) {
-    passwordPool.push(numbers.split(''))
-  }
-
-  if (confirmSymbols) {
-    passwordPool.push(symbols.split(''))
-  }
-
-  var flattenedPool = passwordPool.flat()
-  
-  var password = "";
-
-  for (let i = 0; i < length; i++) {
-    var random = Math.floor(Math.random() * flattenedPool.length);
-    password += flattenedPool[random];
-  }
 
   return password;
 
-  
+
 };
 
 // Write password to the #password input
@@ -80,7 +82,7 @@ generateBtn.addEventListener("click", writePassword);
 //a box for Lowercase, Uppercase, Number, and Symbols
 //then you click "ok" or something and it generates the password.
 
-//array is flattend 
-//crate variable for final password that is going to be retured, not in an array, make sure it is randomized. 
+//array is flattend
+//crate variable for final password that is going to be retured, not in an array, make sure it is randomized.
 //creat a for loop that will randomize or randomly generate the characters, that will be done inside of an array. so then we will turn that array into a string.
 //math random, floor loop
