@@ -14,3 +14,5 @@ I define the password
 I then create a for loop so that a password can be randomly generated from all the potential characters.
 Once it is generated we want it to showup in the textbox, so the user can copy it and paste it wherever they may need it.
 ![generated password](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-password.PNG?raw=true)
+
+https://niccolosaurus.github.io/password-generator/
