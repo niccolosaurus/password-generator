@@ -22,13 +22,7 @@ With this code you are able to create a password betwen the lengths of 8 and 128
 Download or clone the repo to your desktop then run using your coding editor of choice.
 
 ### Usage
-![password-generator](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator.PNG?raw=true)
-![length prompt](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-length.PNG?raw=true)
-![uppercase prompt](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-uppercase.PNG?raw=true)
-![lowercase prompt](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-lowercase.PNG?raw=true)
-![number prompt](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-numbers.PNG?raw=true)
-![symbol prompt](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-symbols.PNG?raw=true)
-![generated password](https://github.com/niccolosaurus/password-generator/blob/main/assets/password-generator-password.PNG?raw=true)
+1[Password-Generator](./assets/gif/Password-Generator.gif)
 
 
 ### License
@@ -39,7 +33,7 @@ https://choosealicense.com/licenses/mit/
 
 MIT License
 
-Copyright (c) [2022] [Niccolo Eck]
+Copyright (c) [2022] [NiccoloEck]
 
 ### Contribution
 me(niccolosaurus)
@@ -48,6 +42,6 @@ me(niccolosaurus)
 
 
 ### Questions
-[Github Profie](https://github.com/niccolosaurus)
-nicco.eck@gmail.com
+[Github Profie](https://github.com/niccolosaurus)<br/>
+nicco.eck@gmail.com<br/>
 https://niccolosaurus.github.io/password-generator/
