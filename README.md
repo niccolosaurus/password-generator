@@ -22,7 +22,7 @@ With this code you are able to create a password betwen the lengths of 8 and 128
 Download or clone the repo to your desktop then run using your coding editor of choice.
 
 ### Usage
-1[Password-Generator](./assets/gif/Password-Generator.gif)
+![Password-Generator](./assets/gif/Password-Generator.gif)
 
 
 ### License
