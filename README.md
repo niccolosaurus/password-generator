@@ -32,11 +32,8 @@ https://choosealicense.com/licenses/mit/
 ### License Details
 
 MIT License
-
-Copyright (c) [2022] [NiccoloEck]
-
 ### Contribution
-me(niccolosaurus)
+niccolosaurus (Niccolo Eck)
 
 ### Test-Instructions
 
